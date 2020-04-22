@@ -129,8 +129,8 @@ class Utility:
 # -------------------------------------------------------------
 		#AAAAAAAAAAAAA
 	def fill_input_file(self):
-		f = open("/home/sartharion/Bureau/stage/POO/com/utils/files/input_facebook.txt", "w")
-		input_file = csv.DictReader(open("/home/sartharion/Bureau/stage/POO/linkedin_results.csv"))
+		f = open("./input_facebook.txt", "w")
+		input_file = csv.DictReader(open("./linkedin_results.csv"))
 		for row in input_file:
 			f.write("https://en-gb.facebook.com/"+row["Name"].replace(" ",".")+"\n")
 
@@ -142,8 +142,8 @@ class Utility:
 
 		#BBBBBBBBB
 	def fill_input_file_twitter(self):
-		f = open("/home/sartharion/Bureau/stage/POO/com/utils/files/input_twitter.txt", "w")
-		input_file = csv.DictReader(open("/home/sartharion/Bureau/stage/POO/linkedin_results.csv"))
+		f = open("./input_twitter.txt", "w")
+		input_file = csv.DictReader(open("./linkedin_results.csv"))
 		for row in input_file:
 			f.write(row["Name"]+"\n")
 

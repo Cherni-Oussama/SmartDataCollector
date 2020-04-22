@@ -102,7 +102,7 @@ class FacebookCollector(SocialMediaCollector):
 
 		print("Filling input file")
 		#self.utils.fill_input_file()
-		ids = ["https://en-gb.facebook.com/" + line.split("/")[-1] for line in open("/home/sartharion/Bureau/stage/POO/com/utils/files/input_facebook.txt", newline='\n')]
+		ids = ["https://en-gb.facebook.com/" + line.split("/")[-1] for line in open("./input_facebook.txt", newline='\n')]
 		
 		if len(ids) > 0:	
 			print("\nStarting Scraping...")

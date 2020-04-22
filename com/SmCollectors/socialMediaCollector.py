@@ -8,7 +8,7 @@ from time import sleep
 class SocialMediaCollector:
 	
 	def __init__(self):
-		self.driver = webdriver.Chrome(executable_path="/home/sartharion/Bureau/stage/POO/com/utils/chromedriver")	
+		self.driver = webdriver.Chrome(executable_path="./chromedriver")	
 		self.utils = Utility(self.driver)	
 	
 	#Login function for Facebook and Linkedin

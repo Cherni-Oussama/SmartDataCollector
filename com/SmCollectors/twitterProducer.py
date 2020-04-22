@@ -106,7 +106,7 @@ class TwitterProducer(SocialMediaCollector):
 		self.utils.fill_input_file_twitter()
 		
 		#Get all the screen names
-		names = [line.rstrip() for line in open("/home/sartharion/Bureau/stage/POO/com/utils/files/input_twitter.txt")]
+		names = [line.rstrip() for line in open("./input_twitter.txt")]
 		
 		if len(names) > 0:	
 
